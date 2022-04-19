@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- stella-orre/checkout.html  30 Nov 2019 03:52:15 GMT -->
+<head>
+<meta charset="utf-8">
+<title>Stella Orr'e - Interior and Home Renovation HTML Template | Checkout</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8KtQ0FHBFs539oSUjCE7YQLSFZwcPx7gCJCGR7HVbVPjcUW0WXTOSlybvoASqrGcI4pn6dBLMno3nyNhgK4lDYwdB8dZHCDA1TLIWiw45IhosRr2LlZLGqqqSUOQnolvT5kUmOLs18ky41jL97RSGKm5BY2NXQfR7jAUa4OzYOmaK4PZrGv2zOmVlkit7TjGgjc-jr_q8kDSLP-4yM7M6yNsp1NBKPBtp8XxX0vKo6b6N6rB2ECucz_RPWlvNIx3edDO2MW2pPuKfMcfGk2Q9bAuWi0VIv6iPhZMuSCgwSLuB6rvRaqH60lPkcYPCyB6zdt6e1XQWsT0LKIRq0RR0-XtSifpfL1sqpTdMT_l-drhEgM8C9BiFJdBIKt4BaFwwsyN_4_DpAXWg-LO8ifswyw3FXgK938ONJWzRkepjak3BhGV761rsBa4BZrUTPR26MmdlEVA0LFrvR1JDOWcRK-zXaKxqcxcUE40P1LpKPKjD8pCN7sJwUq2y3Y-26M2NgbLnJdTVIynWq1xCXalD-xieJNzYELPmbmDJ0wiNFdd2SqsqJHj_AdxAXWXnH0WoAFXnIgX9uz928oRChUO1uf6FmuhnbQ0e0Xm3Uw1pbE4aCKNEaM7t11LS78Gg5dHNJQvGtmeE4UFSvz_wpmNwdgac0JB1yzupJe2qjdsXwJfmKOkOLqik1BZMlYHh6gEYEkKcyAoWSG5O-UhTDs_C3_ZXxDZPLGK-4npWm1YyrhR3uOQNrxGq22Glge7rxbZG3TvamCQfoKoEeSqoKYnX6q_mAfe4pzzrwUuaAI2g0ISvF02f27e5nFcIsxDYhUifrOkLhSpmSQF0eAfzf8Bv7qPRvoLHotyU4Eu9sm4_-WqMTy9ZIyoDwdgxGyxqbGPYDEKxNa78UVQJ7PZyIzASzYLJCVaHtsf0aN1MEJp2PVpHmDk4Lv_X7Ug-DdZhdIg8PdR5a99MnGMSLv924J74EtRZAbyxnG3vjpCFnuZq_JyH4hJwgklkA8WzyVafbCo5jFDveYqorKzhNib2FDHgy3MA70pIJmACXLRepcFeuSAYjISebMiKY3wIXG29cvm5yGotDEifMyd9n4Mo7-IRuakt4ZV3LJbhsj1PcO9bmISmywo0DL8J1aV6m3Db2iFMO4cs2qxQBE5IDHX-w3Tdr4-ewrKmO775Q6X_YBM1eoxqkrCUG0OlDQOcDtcrDnIluKtBTlF8Ikz7s_lmt5kvDYhZq9Zq_nGcCp9KL2nM2ooDC6WFUDCjaTTIxEOnNuEBxsUAgVmhYUFlu9vJWd3G4hZaT3sYSBuCQCjswX5WXo" nonce="a9fb2a6d114ab6b18cb2c7d9d3f88c42" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWM0NGExNTdmMTQmYXR0aWQ9MC42JnBlcm1tc2dpZD1tc2ctZjoxNzMwMzA0MTcyNTI3NDIzODcxJnRoPTE4MDM0NjdhMzRkZjkxN2Ymdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2wyMmVvdWJ4NSZzYWRkYmF0PUFOR2pkSl82WmlUaHppS3h4QmNxLW1WbjBGVHYyUEw5RjNSdllqNTZ0bnRVYmg2MWNhMVVyRXZHOW04YkE1a0t4aF9wTEU5MVNfQk1ISGVIVWgxMmMzWW12OHozaGhoN1lvUUpOTG5tYkhtT0RaM2JIU0k4NEczbUtIS0JTOE5FM0Mxck1IZllhM1g4OWVtM2NwdnRHYmdyOUFxS2xIcFM4a1pFWEpNeXRuODVNZHFjMW8xY2dfY0c2X0lhOVRfa2dKM0F0a2lXUjc2Y1d1eEJ0dGQ5Vzd0T0NYY25MZDRtbXRYdk90N2hXUWk3Wms1Sm0yMW01Qi1GdVNETHp5Q0lPV0ZNWHJ0dmduZTRuTkxVdXNuaXNSUnJBZHRwT3hYdkM5WWxDN25OQTZpUDV4LUpKWWpLdjh2Z1F3SmkzTUhJRU1VTWRINC1RWElsNDg5UU4ySWl1czV1dWNFWFQzTEhya254Ym9mNFlTVWNYODF4cXpwb1hGcDJBOHZUcm9oTlJ6Y3NUOFN1ZWNtNkFxQ1RLbEFiSzNxTTd5Ui16OFpocFBRWUhKTTNiejIzc3lfS0dJbDNqeFV3S1NzNjRIc0NoU3ZTN0xTRmJiOGZJbXljR2h1Sl94dkV1NW5kM2xocERadW1JWkEtcWlYMF81MlFSMXlkbm1YMU9wNGkyRTktWVc0UmhHdGMxb3BTcGVOOWk3UDNNdk5XbGs0c3FKNVFFNjBKcmVQYW5MNUFpS3RYTEl6YlRwMFEzdEJlSHVoTEFkU3g0VWlBOWtXS3JMY3lQSC1yRU45N0t2OEtzRjFYMUlfdlhyNTVidlQ4eGRGSDJTNmJQbVk2Y3NwYzQ0U2dkX2JzcmJHX09rYlB4TkVhVkk0TFg0ZnBteUZKWW9HYWhHejNpdHFRSjRSb0NLYzFmZGxsSnpnUEcyTlBIbkUxcGthT3ZrNTdMZHFlZUlvY29GV2JUbURCWFJUeDFfTnA0NjA3LV96S2lBUjJwUG9OTWhEVnJMSjJxZkpxZW9n"/></head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header header-style-one">
+        <!--Header Top-->
+        <div class="header-top">
+            <div class="auto-container clearfix">
+                <div class="top-left clearfix">
+                    <div class="text"><span class="icon flaticon-call-answer"></span> Need help? Call Us Now : <a href="tel:1800-456-7890" class="number">1800 456 7890</a></div>
+					
+                </div>
+                <div class="top-right clearfix">
+                    <!-- Info List -->
+					<ul class="info-list">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blog.html">Inspiration</a></li>
+						<li class="quote"><a href="contact.html">Get Free Quote</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Top -->
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container">
+                <div class="auto-container clearfix">
+                    <!--Info-->
+                    <div class="logo-outer">
+                        <div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    </div>
+
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="navbar-header">
+                                <!-- Togg le Button -->      
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-1"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="dropdown"><a href="index-2.html">Home</a>
+                                        <ul>
+                                            <li><a href="index-2.html">Home page 01</a></li>
+                                            <li><a href="index-3.html">Home page 02</a></li>
+                                            <li><a href="index-4.html">Home page 03</a></li>
+											<li><a href="index-5.html">Home page 04</a></li>
+                                            <li><a href="index-6.html">Home page 05</a></li>
+                                            <li class="dropdown"><a href="index-2.html">Header Styles</a>
+                                                <ul>
+                                                    <li><a href="index-2.html">Header Style One</a></li>
+                                                    <li><a href="index-3.html">Header Style Two</a></li>
+                                                    <li><a href="index-4.html">Header Style Three</a></li>
+													<li><a href="index-5.html">Header Style Four</a></li>
+                                                    <li><a href="index-6.html">Header Style Five</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="about.html">About us</a>
+                                        <ul>
+                                            <li><a href="about.html">Our Introduction</a></li>
+											<li><a href="team.html">Our Team</a></li>
+											<li><a href="testimonials.html">Testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="services-dark.html">Services</a>
+                                        <ul>
+											<li><a href="services-dark.html">Services Layout 01</a></li>
+											<li><a href="services-light.html">Services Layout 02</a></li>
+                                            <li><a href="residental-interior.html">Residential Interior</a></li>
+                                            <li><a href="commercial-interior.html">Commercial Interior</a></li>
+                                            <li><a href="office-interior.html">Office Design</a></li>
+                                            <li><a href="hospitality-design.html">Hospitality Design</a></li>
+                                            <li><a href="modern-furniture.html">Modern Furniture</a></li>
+											<li><a href="modular-kitchen.html">Modular Kitchen</a></li>
+											<li><a href="wardrobe.html">Wardrobe</a></li>
+											<li><a href="false-celling-design.html">False Celling Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="projects-classic.html">Projects</a>
+                                        <ul>
+                                            <li><a href="projects-classic.html">Projects Classic</a></li>
+                                            <li><a href="projects-masonry.html">Project Masonry</a></li>
+                                            <li><a href="projects-fullwidth.html">Project Full Screen</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="blog.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-2.html">blog 2 column</a></li>
+                                            <li><a href="blog-detail.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+									<li class="current dropdown"><a href="shop.html">Shop</a>
+                                        <ul>
+                                            <li><a href="shop.html">Main shop page</a></li>
+                                            <li><a href="product-detail.html">Product Detail Page</a></li>
+                                            <li><a href="cart-page.html">Cart Page</a></li>
+											<li><a href="checkout.html">Checkout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+						
+						<!-- Outer Box -->
+                        <div class="outer-box clearfix">
+                            <div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+    	<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="clearfix">
+						<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+						<li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+						<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fab fa-youtube"></span></a></li>
+					</ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    <!-- End Main Header -->
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/5.jpg)">
+    	<div class="auto-container">
+        	<h2>Checkout</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="index-2.html">home</a></li>
+                <li>Checkout</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Checkout Page-->
+    <div class="checkout-page">
+        <div class="auto-container">
+            	
+            <!--Default Links-->
+            <ul class="default-links">
+                <li>Returning customer? <a href="#">Click here to login</a></li>
+            </ul>
+                
+            <!--Billing Details-->
+            <div class="billing-details">
+                <div class="shop-form">
+                    <form method="post" action="http://t.commonsupport.com/stella-orre/checkout.html">
+                        <div class="row clearfix">
+                            <div class="col-lg-7 col-md-12 col-sm-12">
+								
+                                <div class="title-box"><h2>Billing Details</h2></div>
+                        		<div class="billing-inner">
+                                    <div class="row clearfix">
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">First name <sup>*</sup></div>
+                                            <input type="text" name="field-name" value="" placeholder="First Name">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">Last name <sup>*</sup></div>
+                                            <input type="text" name="field-name" value="" placeholder="Last Name">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <div class="field-label">Company name </div>
+                                            <input type="text" name="field-name" value="" placeholder="Company name">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <div class="field-label">Address <sup>*</sup></div>
+                                            <input type="email" name="field-name" value="" placeholder="Street Address">
+                                            <input class="address-two" type="email" name="field-name" value="" placeholder="Apartment, Suit unit etc (optional)">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <div class="field-label">Town / City <sup>*</sup></div>
+                                            <input type="text" name="field-name" value="" placeholder="Town /City">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">State / Country <sup>*</sup> </div>
+                                            <select name="country">
+                                                <option>Select an option</option>
+                                                <option>Pakistan</option>
+                                                <option>USA</option>
+                                                <option>CANADA</option>
+                                                <option>INDIA</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">Postcode / Zip <sup>*</sup></div>
+                                            <input type="text" name="code" value="" placeholder="Postcode / Zip">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">Email Address <sup>*</sup></div>
+                                            <input type="text" name="field-name" value="" placeholder="Email Address">
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <div class="field-label">Phone <sup>*</sup></div>
+                                            <input type="text" name="field-name" value="" placeholder="Select an option">
+                                        </div>
+                                        
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="check-box"><input type="checkbox" name="shipping-option" id="account-option"> &ensp; <label for="account-option">Creat an account?</label></div>
+                                        </div>
+                                        
+                                        <div class="form-group title-box col-md-12 col-xs-12"><h2>Ship to Different Address</h2></div>
+                                        
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <div class="field-label">Order Notes</div>
+                                            <textarea placeholder="Note about your order. e.g. special note for delivery"></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12 col-sm-12">
+                                <div class="title-box"><h2>Your Order</h2></div>
+                                <div class="shop-order-box">
+                                	<ul class="order-list">
+                                    	<li>Prodcut<span>TOTAL</span></li>
+                                        <li>Electric Hummer x 1<span>$65.00</span></li>
+                                        <li>Subtotal<span class="dark">$65.00</span></li>
+                                        <li>Shipping And Handling<span>Free Shipping</span></li>
+                                        <li class="total">TOTAL<span class="dark">$65.00</span></li>
+                                    </ul>
+                                    
+                                    
+                                    <!--Place Order-->
+                                    <div class="place-order">
+                                        <!--Payment Options-->
+                                        <div class="payment-options">
+                                            <ul>
+                                            	<li>
+                                                    <div class="radio-option">
+                                                        <input type="radio" name="payment-group" id="payment-2">
+                                                        <label for="payment-2"><strong>Direct Bank Transfer</strong>
+                                                        	<span class="small-text">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-option">
+                                                        <input type="radio" name="payment-group" id="payment-1" checked>
+                                                        <label for="payment-1"><strong>Cheque Payment</strong>
+                                                        	<span class="small-text">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li>
+                                                    <div class="radio-option">
+                                                        <input type="radio" name="payment-group" id="payment-3">
+                                                        <label for="payment-3"><strong>Paypal</strong><img src="images/resource/paypall.jpg" alt="" /> <a href="#" class="what-paypall">What is PayPal?</a></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <button type="button" class="theme-btn order-btn">Order Place</button>
+                                        
+                                    </div>
+                                    <!--End Place Order-->
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>                             
+                    </form>
+                    
+                </div>
+                
+            </div><!--End Billing Details-->
+    	</div>
+    </div>
+	
+	<!--Main Footer-->
+    <footer class="main-footer">
+		<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    </div>
+                                    <div class="text">Stella Orr'e is a WordPress theme to build Interior websites. It has good features and you will love.</div>
+                                    <ul class="social-icons">
+                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    </ul>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                	<h2>Quick links</h2>
+									<div class="widget-content">
+										<ul class="list">
+                                        	<li><a href="#">About Gaille</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditionis</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+					<!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+									<h2>Contact Info</h2>
+									<div class="widget-content">
+										<a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
+										<ul>
+											<li>256, Stella Orr'e, New York 24</li>
+											<li>Email :<a href="mailto:info@stellaorre.com"> info@stellaorre.com</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget newsletter-widget">
+                                	<h2>Newsletter</h2>
+									<div class="text">Get Special offers & Discounts</div>
+									<!-- Newsletter Form -->
+									<div class="newsletter-form">
+										<form method="post" action="templateshub.net">
+											<div class="form-group">
+												<input type="email" name="email" value="" placeholder="Enter your email address" required>
+												<button type="submit" class="theme-btn btn-style-one"><span class="txt">Subscribe</span></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--Footer Bottom-->
+            <div class="footer-bottom clearfix">
+                <div class="pull-left">
+                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                </div>
+                <div class="pull-right">
+                    <a href="templateshub.net">Templates Hub</a>
+                </div>
+            </div>
+			
+		</div>
+	</footer>
+	
+</div>  
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
+	<div class="popup-inner">
+		<div class="overlay-layer"></div>
+    	<div class="search-form">
+        	<form method="post" action="templateshub.net">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+            
+            <br>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Home Interiors</a></li>
+                <li><a href="#">Offices Interiors</a></li>
+                <li><a href="#">Showroom Interiors</a></li>
+                <li><a href="#">Building Interiors</a></li>
+                <li><a href="#">Shops Interiors</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+</div>
+
+<!--Scroll to top-->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/jquery.bootstrap-touchspin.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<!-- stella-orre/checkout.html  30 Nov 2019 03:52:17 GMT -->
+</html>

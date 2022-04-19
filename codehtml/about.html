@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- stella-orre/  30 Nov 2019 03:42:43 GMT -->
+<head>
+<meta charset="utf-8">
+<title>Localuxe </title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=eUcX5PncSf_WoVGTGGEFj3tiR_Ka9kNfc6brt7qENsf5iKp0OV8_UOlNlBF-BF8eBGDHO2m2Jk9uQprErTIGv8x2Z8Fy9eXmJABdOe1OJOdqaRo8u85d3Gp3MKddcDYvmAKdu-d0xgOTpmrEsAR8_Xiw5KjZhtG158SHpiMiRWGDG1-CeMxtrL-V-eX3sBPBsUl9dRZ1vEHoXFnS2pXFFP96lx6-k9Qdl8WRKZTjzyg0eIGJZPl-QaxR-pz3hnQEL0ijoed7CobwN4cdinzqhVgCaF7ojfctR7h7ZYOqgb-8KxS1Y8MsnIiSxQgcJM_biuVNBzuaeGEoytuDzVJXRJylwbXEFf9Qv-ArxMcsMQjye43wm4pJ63ez-zJ5iRZkOVqBZk5nwybj-UPMAUbYOaNS4gpJH-Ml9cojrN0olst3h-s2dpuIBijWvgiPu0ygcOMMrlc9i4Wwa5J_8-LCbLh-b181gI7o7abjJNFZzL6epNF2e3jin6MNDlaRiV7XQECAGdDYgNlujPJRIH5Ih0PYcfW1LfZUK3GSCMcz68AOY5-gVtI-FlP3a3Rh7ejtabL8_DRsPXiU_DBaCuKBqawnjk7yzBLgai0Jm2Qi0WhzkUJfOFyiLqzNZxAiscz0hb_rPR1tr1hRLQtTkgQr1k3hy5M1Lf6HccDss1LNtyh-kvu_8c_rzwFynQAVdRIxMtU-dmG_DF6dT9C_KXVRoHVXcV32rF8cP8bmbBWfY9RugxanDdQEh5uWRLN5ejP-ZrTFelOre7w1LsEgWHUMTi843vy1jLvsp8M23iD24xhmY9Xi-GxZf-YKcO5OXnLDtkXfCczBKlaVjNCQfqbkL2gyurWS9Apt1gfmAApNNKlS3bgBNkJ50exRsN5pas2Zgpz5T3vO9D6Coxpvl8FapqkwKcAn9ecxbxTO68jN85R_934RRnrXerFcaxZydkSRXpnZohdNyj2w_eyOhiVTTtlFg-iBviG6OCxrMkdF1JyGxFaOe8TSi60ELuNe6NHpsNF5UJXYyURGbcyl7JFhupg6di-pHMP4NjZoqGNON343vo3PoIIqLy11DhGsDExklxvPvwmvZnRY_9ufvdUrPekGAN-GIaRc9b0Nw_kT_tTJjxT_PfCJ-nzxKtpE9OenwPYLwo9dob3CqCPYcyelRyFi04RYN-ZePJY--wfoe91y3Vy9xXjRFxZt-lofQS906PV7Xbfq4K09b-FT_QQojyYgoLD1rnW1kSvzoViOEktrb88M0QVmbQEejMgojaHCprpq8q8WUMLQ2LI7g7qMAljY3fK4y5wqbg2bR0t-jY8" nonce="b5d7983da41c19d1fb9fee5bbf8c435c" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWM0NGExNTdmMTQmYXR0aWQ9MC4yJnBlcm1tc2dpZD1tc2ctZjoxNzMwMzA0MTcyNTI3NDIzODcxJnRoPTE4MDM0NjdhMzRkZjkxN2Ymdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2wyMmVvdWJhMCZzYWRkYmF0PUFOR2pkSl9YYUFRNW45alBYd0ZGOGQxc05LVk9hcWxGZDhhbWhkRXNtSWs0VjhhY08tVWU1QUxBV3Y5amVKT3puaUJoZVAzbThkeE1jeFZiRG5lTW9QTVpSN0hfN0h6ZjlJTXcxTDI0dkFJX1dBcnRwSTYyUDVDd19UOFBza3p5Y1B3RmRCTE9wLWhqZTMtTzl4cmRISlNzVzQ1c05vUnhfNHZiLVJmaDlpYVFfNDY4NmhkeEZnSE8wZHcwOGg4eTd1RnNDOWlTR2tySXBEaWVZMHpQbUxhYWlZYi02cFNvaUhFdXJhdkxhR1RQY2tRYjZqaWtCYWllbmJXUWUweWtoRlJZN0tfX3FPYU1UUEZXQmhaT1hXc20yYWJ3MXA5S09WZmdYUC1tSU5lU0w1NTFTazJGaE1rNXFudU5YNGp5Ulg1aEZxYWxtQk5qLVVLM3hXdU9KWXllekxIOW0yakZmXzM5MHItQUllX3V4amtCTkNKeEN0UmszbEI0NnVzWldwTzQwekdiUU01aHZ5R0ZMZHowTUtTdkNEVV82c0RyQVBKRlZub3VXcnFEX0oyck9Pc2NMLVhOWlpTNjR3Nmx0dEUwcFZENHBUT3liMTU0bEg2NVRmT0dVcWpQR28wcEhMcHpvbkstNjRMZXY5elZnOC1HN2M2YURJODhTMTNSWDZRcThzbDBKVFpEMlNTWF9FdHVranhhTXcyRkNWY2dhd01kQUUweHpEX05IUC15R3pza2FUMERLTUpjcUZjb0ZsUHJMRjNLWEktcmJSOE9keG9KaVZ4a29qZllLWm9RRzVIMHU4NHFaM2x1WVd4WGJsNGpfeUxDR3Z1YWtUY0VqSTdSamtGbk9GZElJejJsbXlNTDVpWThvUmE0SGt3bk9TMXZDOVhoUlN3eE8ydjhuRWxjemJqSnNoQjdoQ0YtdWVvZGdrWjhSNUp0UnhWUm95d3BLVW5tN0QxWjNNUDVvMjhFdC1VWnlfYVBzQTE2ckVFNVVtR0NUeHNyMXJn"/></head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header header-style-one">
+      
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container">
+                <div class="auto-container clearfix">
+                    <!--Info-->
+                    <div class="logo-outer">
+                        <div class="logo"><a href="index-2.html"><img src="images/localuxe.png" alt="" title=""></a></div>
+                    </div>
+
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="navbar-header">
+                                <!-- Togg le Button -->      
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-1"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="index-2.html">Accueil</a>
+                                        
+                                    </li>
+									<li class="dropdown"><a href="about.html">A Propos de nous</a>
+                                        <ul>
+											<li><a href="team.html">Notre Equipe</a></li>
+											
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="services-dark.html">Véhicules</a>
+                                        
+                                    </li>
+                                    <li class="dropdown"><a href="projects-classic.html">Evenement</a>
+                                        <ul>
+                                            <li><a href="projects-classic.html">Nos evenement</a></li>
+                                
+                                            <li><a href="projects-fullwidth.html">Sponsors</a></li>
+                                        </ul>
+                                    </li>
+									
+									
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+						
+						<!-- Outer Box -->
+                        <div class="outer-box clearfix">
+                            <div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+    	
+
+    </header>
+    <!-- End Main Header -->
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/1.png)">
+    	<div class="auto-container">
+        	<h2>Notre Equipe</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="index-2.html">Accueil</a></li>
+                <li>Notre Equipe</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Team Page Section -->
+	<section class="team-page-section">
+		<div class="auto-container">
+			
+			
+					
+					
+					
+				
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h2>L'Equipe de Lucaluxe</h2>
+				
+			
+			
+			<div class="clearfix">
+				
+				 
+<!-- Team Block -->
+<div class="team-block col-lg-3 col-md-6 col-sm-12">
+	<div class="inner-box">
+		<div class="image">
+			<img src="images/resource/d15.jpg" alt="" />
+			<div class="overlay-box">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-skype"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lower-content">
+			<h3><a href="team.html">Ben Romdhane Wajdi</a></h3>
+			<div class="designation">Gestion de Réclamation</div>
+		</div>
+	</div>
+</div>
+
+<!-- Team Block -->
+<div class="team-block col-lg-3 col-md-6 col-sm-12">
+	<div class="inner-box">
+		<div class="image">
+			<img src="images/resource/q1.jpg" alt="" />
+			<div class="overlay-box">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-skype"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lower-content">
+			<h3><a href="team.html">Chammakhi Nourhene</a></h3>
+			<div class="designation">Gestion des événements</div>
+		</div>
+	</div>
+</div>
+
+<!-- Team Block -->
+<div class="team-block col-lg-3 col-md-6 col-sm-12">
+	<div class="inner-box">
+		<div class="image">
+			<img src="images/resource/q2.jpg" alt="" />
+			<div class="overlay-box">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-skype"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lower-content">
+			<h3><a href="team.html">Ben Hamida Aziz</a></h3>
+			<div class="designation">Gestion de facture</div>
+		</div>
+	</div>
+</div>
+
+<!-- Team Block -->
+<div class="team-block col-lg-3 col-md-6 col-sm-12">
+	<div class="inner-box">
+		<div class="image">
+			<img src="images/resource/q3.jpg" alt="" />
+			<div class="overlay-box">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-skype"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lower-content">
+			<h3><a href="team.html">Sadraoui Samar</a></h3>
+			<div class="designation">Gestion des utilisateurs</div>
+		</div>
+	</div>
+</div>
+
+<!-- Team Block -->
+<div class="team-block col-lg-3 col-md-6 col-sm-12">
+	<div class="inner-box">
+		<div class="image">
+			<img src="images/resource/q4.jpg" alt="" />
+			<div class="overlay-box">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-skype"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lower-content">
+			<h3><a href="team.html">Afaya Arij</a></h3>
+			<div class="designation">Gestion des vehicules</div>
+		</div>
+	</div>
+</div>
+
+	</section>
+	<!-- End Story Section -->
+	
+	<!--Main Footer-->
+    <footer class="main-footer">
+		<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="index-2.html"><img src="images/localuxe.png" alt="" /></a>
+                                    </div>
+                                    
+                                    <ul class="social-icons">
+                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    </ul>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                	
+									
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+					<!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+									<h2>Nos Contacts</h2>
+									<div class="widget-content">
+										<a href="tel:1800-574-9687" class="contact-number">(+216)94309914</a>
+										<ul>
+											<li>18, rue de l'Usine - ZI Aéroport Charguia II </li>
+											<li>Email :<a href="mailto:info@stellaorre.com"> info@stellaorre.com</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget newsletter-widget">
+                                	<h2>Contactez Nous</h2>
+									<div class="text">Profitez de nos offres</div>
+									<!-- Newsletter Form -->
+									<div class="newsletter-form">
+										<form method="post" action="templateshub.net">
+											<div class="form-group">
+												<input type="email" name="email" value="" placeholder="Entrer votre Adresse Email" required>
+												<button type="submit" class="theme-btn btn-style-one"><span class="txt">S'inscrire</span></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--Footer Bottom-->
+            <div class="footer-bottom clearfix">
+                <div class="pull-left">
+                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                </div>
+                <div class="pull-right">
+                    <a href="templateshub.net">Templates Hub</a>
+                </div>
+            </div>
+			
+		</div>
+	</footer>
+	
+</div>  
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
+	<div class="popup-inner">
+		<div class="overlay-layer"></div>
+    	<div class="search-form">
+        	<form method="post" action="templateshub.net">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+            
+            <br>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Home Interiors</a></li>
+                <li><a href="#">Offices Interiors</a></li>
+                <li><a href="#">Showroom Interiors</a></li>
+                <li><a href="#">Building Interiors</a></li>
+                <li><a href="#">Shops Interiors</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+</div>
+	
+
+<!--Scroll to top-->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<!-- stella-orre/  30 Nov 2019 03:45:45 GMT -->
+</html>
